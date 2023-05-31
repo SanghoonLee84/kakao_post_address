@@ -96,7 +96,8 @@
                         }
 
                         // window.searchAddress.processDATA(data.zonecode + ", " + fullRoadAddr);
-                        window.postMessageToiOS(data.zonecode + ", " + fullRoadAddr);
+                        // window.postMessageToiOS(data.zonecode + ", " + fullRoadAddr);
+                        window.postMessageToiOS(fullRoadAddr);
                         console.log("postMessageToiOS");
                     },
                     width : '100%',

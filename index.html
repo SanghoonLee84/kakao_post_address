@@ -28,6 +28,7 @@
             }
             
             function postMessageToiOS(postData) {
+                console.log(postData);
                 if (window.webkit?.messageHandlers?.callBackHandler) {
                     window.webkit.messageHandlers.callBackHandler.postMessage(postData);
                 } else {
@@ -94,6 +95,7 @@
                         }
 
                         // window.searchAddress.processDATA(data.zonecode + ", " + fullRoadAddr);
+                        // window.postMessageToiOS(data.zonecode + ", " + fullRoadAddr);
                         window.postMessageToiOS(fullRoadAddr);
                     },
                     width : '100%',
